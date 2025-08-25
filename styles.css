@@ -1,0 +1,95 @@
+.custom-card {
+  display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.custom-card .card-img {
+  padding: 10px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  max-width: 250px; 
+  position: relative;
+  top: -20px;  
+  z-index: 2;  
+}
+
+.custom-card .card-img img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.custom-card .card-text {
+  flex-grow: 1;
+}
+
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.float-anim {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.rotate-anim {
+  animation: rotate360 5s linear infinite;
+  max-width: 200px; 
+  position: relative;
+  top: -20px;
+  z-index: 2;
+}
+
+
+.animal-static {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.animal-container .meow {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff0000;
+  animation: meowAnim 3s linear infinite;
+  opacity: 0;
+}
+
+
+.meow1 { top: -2px; left: 10px; animation-delay: 0s; }
+.meow2 { top: -6px; left: 50px; animation-delay: 1s; }
+.meow3 { top: -12px; left: 90px; animation-delay: 2s; }
+
+@keyframes meowAnim {
+  0% { transform: translateY(0); opacity: 0; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(-40px); opacity: 0; }
+}
+
+.bi {
+  color: #ff0000; 
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #1500ff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.body{
+  font-family: 'Roboto', cursive;
+}
+
