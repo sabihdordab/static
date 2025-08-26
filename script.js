@@ -34,3 +34,19 @@ playBtn.addEventListener("click", () => {
   player.play();
 });
 
+function petTheCat() {
+  const cat = document.getElementById('catImage');
+  
+
+  cat.classList.add('wiggle-anim');
+  
+
+  const meowSound = new Audio('assets/sounds/meow.wav');
+  meowSound.play().catch(e => {
+    console.log('Sound file not found, showing visual feedback only');
+  });
+  
+  setTimeout(() => {
+    cat.classList.remove('wiggle-anim');
+  }, 500);
+}

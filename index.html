@@ -15,11 +15,14 @@
         <div class="custom-card d-flex align-items-center p-3">
           <div class="card-img me-3">
             <img src="assets/pics/hi1.png" alt="Profile" class="img-fluid">
+            <div class="manga-bubble">Hi There!</div>
           </div>
           <div class="card-text">
-            <h2 class="name">Sabih Dordab</h2>
+            <button class="button-92">Sabih Dordab</button>
+            <hr>
+            <br>
             Hi — my full name is <strong>Sabiheh Dordab</strong> (in Persian: صبیحه دردآب),
-            but everyone call me <strong>Sabih</strong>. I was born in 2003 and I’m from southern Iran. <i class="bi bi-emoji-smile-upside-down-fill"></i>            
+            but everyone calls me <strong>Sabih</strong>. I was born in 2003 and I’m from southern Iran. <i class="bi bi-emoji-smile-upside-down-fill"></i>            
           </div>
         </div>
       </div>
@@ -34,7 +37,7 @@
             <img src="assets/pics/error.png" alt="Profile" class="img-fluid">
           </div>
           <div class="card-text">
-             <h2 class="name"><i class="bi bi-code-slash"></i>Explorer</h2>
+             <h2 class="name"><i class="bi bi-filetype-py"></i> Explorer</h2>
     I’m a programmer and studied computer engineering at university. 
     I mostly code in Python — actually, the reason I learned Python was 
     because it allowed me to explore and tinker with so many things. 
@@ -75,8 +78,8 @@
         <div class="card-text">
           <h2 class="name"><i class="bi bi-music-note-beamed"></i> My Music</h2>
           Click the button below and I’ll play a random song from my collection!
-          <div class="mt-3">
-            <button id="playMusicBtn" class="btn btn-primary">Play Random Music 🎵</button>
+          <div class="mt-4">
+            <button id="playMusicBtn" class="button-70">Play Random Music 🎵</button>
           </div>
           <audio id="musicPlayer"></audio>
           
@@ -110,15 +113,20 @@
   <div class="row justify-content-center">
     <div class="col">
       <div class="custom-card d-flex align-items-center p-3">
-        <div class="card-img me-3 rotate-anim">
+        <div class="card-img me-3 float-anim">
           <img src="assets/pics/cry.png" alt="Mind" class="img-fluid">
         </div>
         <div class="card-text">
-          <h2 class="name"><i class="bi bi-bug-fill"></i> Bug or Feature</h2>
-          My brain is extremely imaginative — so much that I’ve spent most of my life 
-          in my thoughts. Whether in class, outside with friends, or anywhere else, 
-          I was often lost in imagination. It turned out that most people aren’t like this, 
-          and I am an ADHD-type B with attention challenges.
+              <h2 class="name"><i class="bi bi-graph-up-arrow"></i> Learning Journey</h2>
+I started with <b>Python basics</b>, then moved to  <b>web development (Django and Django REST)</b>, 
+explored  <b>data science (NumPy, Pandas, Matplotlib...) and data mining, learned about 
+NLP, ML (a bit), databases (SQL), unit testing, Linux (a little)</b>, and I've also coded 
+with Java and C++. You might find it interesting, but I think Assembly is pretty cool too — 
+there was a time when I tried to rewrite my Python algorithms in Assembly!
+<br><br>
+Recently, I've been working with Pygame + Computer Vision for my bachelor's thesis project, 
+where I'm developing games that work with image processing. If you want to see a sample, 
+check out this link: <a class="button-8" href="https://github.com/sabihdordab/Maze-Adventure.git" target="_blank"><i class="bi bi-github"></i> Project Demo</a>
         </div>
       </div>
     </div>
@@ -131,10 +139,11 @@
         </div>
 
         <div class="card-text position-relative">
-          <h2 class="name"><i class="bi bi-hearts"></i> Animal Lover</h2>
+          <h2 class="name"><i class="bi bi-fire"></i> Animal Lover</h2>
           I truly love animals, even more than most people. 🐾
           <div class="animal-container mt-3 position-relative">
-            <img src="assets/pics/cat.png" alt="Cute Animal" class="img-fluid animal-static">
+            <div class="pet-me-text">"منو نازم کن 💕 (Pet me!)"</div>
+            <img src="assets/pics/cat.png" alt="Cute Animal" class="img-fluid animal-static" id="catImage" onclick="petTheCat()">
             <div class="meow meow1">Meow</div>
             <div class="meow meow2">Meow</div>
             <div class="meow meow3">Meow</div>
@@ -160,10 +169,10 @@
           I really enjoy hearing ideas, coding them, and building projects. 
           If you’d like, you can connect with me through the links below:
           <ul>
-            <li><a href="https://github.com/sabihdordab" target="_blank">GitHub</a></li>
-            <li><a href="https://instagram.com/0x4e0x4f0x58" target="_blank">Instagram</a></li>
-            <li><a href="https://www.youtube.com/@sabihd0rd4b" target="_blank">YouTube</a></li>
-            <li><a href="mailto:sabihedordab@gmail.com">Email</a></li>
+            <li><a class="button-8" href="https://github.com/sabihdordab" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+            <li><a class="button-8" href="https://instagram.com/0x4e0x4f0x58" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a class="button-8" href="https://www.youtube.com/@sabihd0rd4b" target="_blank"><i class="bi bi-youtube"></i> YouTube</a></li>
+            <li><a class="button-8" href="mailto:sabihedordab@gmail.com"><i class="bi bi-envelope-fill"></i> Email</a></li>
           </ul>
         </div>
 
